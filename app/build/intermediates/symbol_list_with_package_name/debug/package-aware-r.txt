@@ -643,6 +643,9 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id color_edit
+id color_label
+id color_text
 id content
 id contentPanel
 id course_edit
@@ -662,9 +665,6 @@ id dream_edit
 id dream_label
 id dream_text
 id edit_query
-id email_edit
-id email_label
-id email_text
 id end
 id expand_activities_button
 id expanded_menu
@@ -856,6 +856,8 @@ string app_name
 string bio
 string birthday_enter
 string birthday_label
+string color_enter
+string color_label
 string course_enter
 string course_label
 string crush_enter
@@ -863,8 +865,6 @@ string crush_label
 string done
 string dream_enter
 string dream_label
-string email_enter
-string email_label
 string hello_label
 string message_label
 string name_enter

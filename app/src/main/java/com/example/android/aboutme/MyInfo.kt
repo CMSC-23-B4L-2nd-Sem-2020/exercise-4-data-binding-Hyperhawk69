@@ -18,5 +18,5 @@ package com.example.android.aboutme
 
 
 data class MyInfo(var name: String = "", var nickname: String = "", var age: String = "",var birthday: String = "",var phone: String = "",
-                  var email: String = "",var course: String = "",var dream: String = "",var crush: String = "",var message: String = "")
+                  var color: String = "",var course: String = "",var dream: String = "",var crush: String = "",var message: String = "")
 

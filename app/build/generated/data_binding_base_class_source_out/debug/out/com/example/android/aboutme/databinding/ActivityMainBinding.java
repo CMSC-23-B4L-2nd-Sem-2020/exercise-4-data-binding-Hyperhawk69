@@ -41,6 +41,15 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView birthdayText;
 
   @NonNull
+  public final EditText colorEdit;
+
+  @NonNull
+  public final TextView colorLabel;
+
+  @NonNull
+  public final TextView colorText;
+
+  @NonNull
   public final EditText courseEdit;
 
   @NonNull
@@ -69,15 +78,6 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   @NonNull
   public final TextView dreamText;
-
-  @NonNull
-  public final EditText emailEdit;
-
-  @NonNull
-  public final TextView emailLabel;
-
-  @NonNull
-  public final TextView emailText;
 
   @NonNull
   public final TextView hello;
@@ -126,10 +126,10 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       EditText ageEdit, TextView ageLabel, TextView ageText, ScrollView bioScroll,
-      EditText birthdayEdit, TextView birthdayLabel, TextView birthdayText, EditText courseEdit,
-      TextView courseLabel, TextView courseText, EditText crushEdit, TextView crushLabel,
-      TextView crushText, Button doneButton, EditText dreamEdit, TextView dreamLabel,
-      TextView dreamText, EditText emailEdit, TextView emailLabel, TextView emailText,
+      EditText birthdayEdit, TextView birthdayLabel, TextView birthdayText, EditText colorEdit,
+      TextView colorLabel, TextView colorText, EditText courseEdit, TextView courseLabel,
+      TextView courseText, EditText crushEdit, TextView crushLabel, TextView crushText,
+      Button doneButton, EditText dreamEdit, TextView dreamLabel, TextView dreamText,
       TextView hello, EditText messageEdit, TextView messageLabel, TextView messageText,
       EditText nameEdit, TextView nameLabel, TextView nameText, EditText nicknameEdit,
       TextView nicknameLabel, TextView nicknameText, EditText phoneEdit, TextView phoneLabel,
@@ -142,6 +142,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.birthdayEdit = birthdayEdit;
     this.birthdayLabel = birthdayLabel;
     this.birthdayText = birthdayText;
+    this.colorEdit = colorEdit;
+    this.colorLabel = colorLabel;
+    this.colorText = colorText;
     this.courseEdit = courseEdit;
     this.courseLabel = courseLabel;
     this.courseText = courseText;
@@ -152,9 +155,6 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.dreamEdit = dreamEdit;
     this.dreamLabel = dreamLabel;
     this.dreamText = dreamText;
-    this.emailEdit = emailEdit;
-    this.emailLabel = emailLabel;
-    this.emailText = emailText;
     this.hello = hello;
     this.messageEdit = messageEdit;
     this.messageLabel = messageLabel;

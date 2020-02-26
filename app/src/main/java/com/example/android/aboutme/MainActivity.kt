@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             myInfo?.age = ageEdit.text.toString()
             myInfo?.birthday = birthdayEdit.text.toString()
             myInfo?.phone = phoneEdit.text.toString()
-            myInfo?.email = emailEdit.text.toString()
+            myInfo?.color = colorEdit.text.toString()
             myInfo?.course = courseEdit.text.toString()
             myInfo?.dream = dreamEdit.text.toString()
             myInfo?.crush = crushEdit.text.toString()
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
             ageLabel.visibility = View.GONE
             birthdayLabel.visibility = View.GONE
             phoneLabel.visibility = View.GONE
-            emailLabel.visibility = View.GONE
+            colorLabel.visibility = View.GONE
             courseLabel.visibility = View.GONE
             dreamLabel.visibility = View.GONE
             crushLabel.visibility = View.GONE
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             ageEdit.visibility = View.GONE
             birthdayEdit.visibility = View.GONE
             phoneEdit.visibility = View.GONE
-            emailEdit.visibility = View.GONE
+            colorEdit.visibility = View.GONE
             courseEdit.visibility = View.GONE
             dreamEdit.visibility = View.GONE
             crushEdit.visibility = View.GONE
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             ageText.visibility = View.VISIBLE
             birthdayText.visibility = View.VISIBLE
             phoneText.visibility = View.VISIBLE
-            emailText.visibility = View.VISIBLE
+            colorText.visibility = View.VISIBLE
             courseText.visibility = View.VISIBLE
             dreamText.visibility = View.VISIBLE
             crushText.visibility = View.VISIBLE

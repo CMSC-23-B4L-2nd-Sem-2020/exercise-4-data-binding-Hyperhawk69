@@ -27,7 +27,7 @@ limitations under the License. -->
     <string name="age_enter">Enter Age</string>
     <string name="birthday_enter">Enter Birthday</string>
     <string name="phone_enter">Enter Phone Number</string>
-    <string name="email_enter">Enter Email Address</string>
+    <string name="color_enter">Enter Favorite Color</string>
     <string name="course_enter">Enter Course</string>
     <string name="dream_enter">Enter Dream</string>
     <string name="crush_enter">Enter Name of Crush</string>
@@ -41,7 +41,7 @@ limitations under the License. -->
     <string name="age_label">Age</string>
     <string name="birthday_label">When is your birthday?</string>
     <string name="phone_label">Phone number</string>
-    <string name="email_label">What is your email address?</string>
+    <string name="color_label">What is your favorite color?</string>
     <string name="course_label">What is your course?</string>
     <string name="dream_label">What is your ultimate dream?</string>
     <string name="crush_label">Who is your secret crush?</string>

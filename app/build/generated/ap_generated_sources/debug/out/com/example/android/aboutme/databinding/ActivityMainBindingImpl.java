@@ -26,8 +26,8 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds.put(R.id.birthday_edit, 20);
         sViewsWithIds.put(R.id.phone_label, 21);
         sViewsWithIds.put(R.id.phone_edit, 22);
-        sViewsWithIds.put(R.id.email_label, 23);
-        sViewsWithIds.put(R.id.email_edit, 24);
+        sViewsWithIds.put(R.id.color_label, 23);
+        sViewsWithIds.put(R.id.color_edit, 24);
         sViewsWithIds.put(R.id.course_label, 25);
         sViewsWithIds.put(R.id.course_edit, 26);
         sViewsWithIds.put(R.id.dream_label, 27);
@@ -92,6 +92,32 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
 
 
                 myInfo.setBirthday(((java.lang.String) (callbackArg_0)));
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener colorTextandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of myInfo.color
+            //         is myInfo.setColor((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(colorText);
+            // localize variables for thread safety
+            // myInfo != null
+            boolean myInfoJavaLangObjectNull = false;
+            // myInfo
+            com.example.android.aboutme.MyInfo myInfo = mMyInfo;
+            // myInfo.color
+            java.lang.String myInfoColor = null;
+
+
+
+            myInfoJavaLangObjectNull = (myInfo) != (null);
+            if (myInfoJavaLangObjectNull) {
+
+
+
+
+                myInfo.setColor(((java.lang.String) (callbackArg_0)));
             }
         }
     };
@@ -170,32 +196,6 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
 
 
                 myInfo.setDream(((java.lang.String) (callbackArg_0)));
-            }
-        }
-    };
-    private androidx.databinding.InverseBindingListener emailTextandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
-        @Override
-        public void onChange() {
-            // Inverse of myInfo.email
-            //         is myInfo.setEmail((java.lang.String) callbackArg_0)
-            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(emailText);
-            // localize variables for thread safety
-            // myInfo != null
-            boolean myInfoJavaLangObjectNull = false;
-            // myInfo
-            com.example.android.aboutme.MyInfo myInfo = mMyInfo;
-            // myInfo.email
-            java.lang.String myInfoEmail = null;
-
-
-
-            myInfoJavaLangObjectNull = (myInfo) != (null);
-            if (myInfoJavaLangObjectNull) {
-
-
-
-
-                myInfo.setEmail(((java.lang.String) (callbackArg_0)));
             }
         }
     };
@@ -316,6 +316,9 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (android.widget.EditText) bindings[20]
             , (android.widget.TextView) bindings[19]
             , (android.widget.TextView) bindings[4]
+            , (android.widget.EditText) bindings[24]
+            , (android.widget.TextView) bindings[23]
+            , (android.widget.TextView) bindings[6]
             , (android.widget.EditText) bindings[26]
             , (android.widget.TextView) bindings[25]
             , (android.widget.TextView) bindings[7]
@@ -326,9 +329,6 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (android.widget.EditText) bindings[28]
             , (android.widget.TextView) bindings[27]
             , (android.widget.TextView) bindings[8]
-            , (android.widget.EditText) bindings[24]
-            , (android.widget.TextView) bindings[23]
-            , (android.widget.TextView) bindings[6]
             , (android.widget.TextView) bindings[11]
             , (android.widget.EditText) bindings[32]
             , (android.widget.TextView) bindings[31]
@@ -347,10 +347,10 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         this.ageText.setTag(null);
         this.bioScroll.setTag(null);
         this.birthdayText.setTag(null);
+        this.colorText.setTag(null);
         this.courseText.setTag(null);
         this.crushText.setTag(null);
         this.dreamText.setTag(null);
-        this.emailText.setTag(null);
         this.messageText.setTag(null);
         this.nameText.setTag(null);
         this.nicknameText.setTag(null);
@@ -417,10 +417,10 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         com.example.android.aboutme.MyInfo myInfo = mMyInfo;
         java.lang.String myInfoCrush = null;
         java.lang.String myInfoDream = null;
+        java.lang.String myInfoColor = null;
         java.lang.String myInfoAge = null;
         java.lang.String myInfoMessage = null;
         java.lang.String myInfoName = null;
-        java.lang.String myInfoEmail = null;
         java.lang.String myInfoNickname = null;
         java.lang.String myInfoPhone = null;
         java.lang.String myInfoBirthday = null;
@@ -436,14 +436,14 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
                     myInfoCrush = myInfo.getCrush();
                     // read myInfo.dream
                     myInfoDream = myInfo.getDream();
+                    // read myInfo.color
+                    myInfoColor = myInfo.getColor();
                     // read myInfo.age
                     myInfoAge = myInfo.getAge();
                     // read myInfo.message
                     myInfoMessage = myInfo.getMessage();
                     // read myInfo.name
                     myInfoName = myInfo.getName();
-                    // read myInfo.email
-                    myInfoEmail = myInfo.getEmail();
                     // read myInfo.nickname
                     myInfoNickname = myInfo.getNickname();
                     // read myInfo.phone
@@ -458,10 +458,10 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
 
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.ageText, myInfoAge);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.birthdayText, myInfoBirthday);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.colorText, myInfoColor);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.courseText, myInfoCourse);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.crushText, myInfoCrush);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.dreamText, myInfoDream);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.emailText, myInfoEmail);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.messageText, myInfoMessage);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.nameText, myInfoName);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.nicknameText, myInfoNickname);
@@ -472,10 +472,10 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
 
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.ageText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, ageTextandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.birthdayText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, birthdayTextandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.colorText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, colorTextandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.courseText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, courseTextandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.crushText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, crushTextandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.dreamText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, dreamTextandroidTextAttrChanged);
-            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.emailText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, emailTextandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.messageText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, messageTextandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.nameText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, nameTextandroidTextAttrChanged);
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.nicknameText, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, nicknameTextandroidTextAttrChanged);
