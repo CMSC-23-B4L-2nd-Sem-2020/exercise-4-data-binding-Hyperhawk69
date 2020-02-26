@@ -46,7 +46,6 @@ limitations under the License. -->
 
             <TextView
                 android:id="@+id/name_text"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.name}"
@@ -54,8 +53,7 @@ limitations under the License. -->
                 android:visibility="gone" />
 
             <TextView
-                android:id="@+id/age_text"
-                style="@style/NameStyle"
+                android:id="@+id/nickname_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.nickname}"
@@ -63,8 +61,15 @@ limitations under the License. -->
                 android:visibility="gone" />
 
             <TextView
+                android:id="@+id/age_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={myInfo.age}"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <TextView
                 android:id="@+id/birthday_text"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.birthday}"
@@ -73,7 +78,6 @@ limitations under the License. -->
 
             <TextView
                 android:id="@+id/phone_text"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.phone}"
@@ -82,7 +86,6 @@ limitations under the License. -->
 
             <TextView
                 android:id="@+id/email_text"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.email}"
@@ -91,7 +94,6 @@ limitations under the License. -->
 
             <TextView
                 android:id="@+id/course_text"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.course}"
@@ -100,7 +102,6 @@ limitations under the License. -->
 
             <TextView
                 android:id="@+id/dream_text"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.dream}"
@@ -109,7 +110,6 @@ limitations under the License. -->
 
             <TextView
                 android:id="@+id/crush_text"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.crush}"
@@ -118,10 +118,17 @@ limitations under the License. -->
 
             <TextView
                 android:id="@+id/message_text"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@={myInfo.message}"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/thank_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thanks"
                 android:textAlignment="center"
                 android:visibility="gone" />
 
@@ -133,7 +140,6 @@ limitations under the License. -->
 
             <EditText
                 android:id="@+id/name_edit"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name_enter"
@@ -147,7 +153,6 @@ limitations under the License. -->
 
             <EditText
                 android:id="@+id/nickname_edit"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/nickname_enter"
@@ -157,32 +162,30 @@ limitations under the License. -->
                 android:id="@+id/age_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Age" />
+                android:text="@string/age_label" />
 
             <EditText
                 android:id="@+id/age_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
                 android:hint="@string/age_enter"
                 android:inputType="number" />
 
             <TextView
-                android:id="@+id/birthday"
+                android:id="@+id/birthday_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/birthday_label" />
 
             <EditText
                 android:id="@+id/birthday_edit"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/birthday_enter"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/phone"
+                android:id="@+id/phone_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/phone_label" />
@@ -191,77 +194,63 @@ limitations under the License. -->
                 android:id="@+id/phone_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
                 android:hint="@string/phone_enter"
                 android:inputType="phone" />
 
             <TextView
-                android:id="@+id/email"
+                android:id="@+id/email_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/email_label" />
 
             <EditText
                 android:id="@+id/email_edit"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email_enter"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/course"
+                android:id="@+id/course_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/course_label" />
 
             <EditText
                 android:id="@+id/course_edit"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/course_enter"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/dream"
+                android:id="@+id/dream_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/dream_label" />
 
             <EditText
                 android:id="@+id/dream_edit"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/dream_enter"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/crush"
+                android:id="@+id/crush_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/crush_label" />
 
             <EditText
                 android:id="@+id/crush_edit"
-                style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/crush_enter"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/nickname_text"
-                style="@style/NameStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@={myInfo.nickname}"
-                android:textAlignment="center"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/message"
+                android:id="@+id/message_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/message_label" />
@@ -270,7 +259,6 @@ limitations under the License. -->
                 android:id="@+id/message_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine" />
 

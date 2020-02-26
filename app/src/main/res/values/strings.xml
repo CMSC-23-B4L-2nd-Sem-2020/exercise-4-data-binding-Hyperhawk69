@@ -34,6 +34,7 @@ limitations under the License. -->
 
     <string name="done">Done</string>
     <string name="hello_label">Hello!</string>
+    <string name="thanks">Thank you for answering!</string>
 
     <string name="name_label">Name</string>
     <string name="nickname_label">Nickname</string>

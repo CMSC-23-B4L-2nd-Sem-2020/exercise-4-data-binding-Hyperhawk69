@@ -44,6 +44,57 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addInfo(view: View) {
+        binding. apply {
+            myInfo?.name = nameEdit.text.toString()
+            myInfo?.nickname = nicknameEdit.text.toString()
+            myInfo?.age = ageEdit.text.toString()
+            myInfo?.birthday = birthdayEdit.text.toString()
+            myInfo?.phone = phoneEdit.text.toString()
+            myInfo?.email = emailEdit.text.toString()
+            myInfo?.course = courseEdit.text.toString()
+            myInfo?.dream = dreamEdit.text.toString()
+            myInfo?.crush = crushEdit.text.toString()
+            myInfo?.message = messageEdit.text.toString()
 
+            invalidateAll()
+
+            hello.visibility = View.GONE
+            nameLabel.visibility = View.GONE
+            nicknameLabel.visibility = View.GONE
+            ageLabel.visibility = View.GONE
+            birthdayLabel.visibility = View.GONE
+            phoneLabel.visibility = View.GONE
+            emailLabel.visibility = View.GONE
+            courseLabel.visibility = View.GONE
+            dreamLabel.visibility = View.GONE
+            crushLabel.visibility = View.GONE
+            messageLabel.visibility = View.GONE
+            nameEdit.visibility = View.GONE
+            nicknameEdit.visibility = View.GONE
+            ageEdit.visibility = View.GONE
+            birthdayEdit.visibility = View.GONE
+            phoneEdit.visibility = View.GONE
+            emailEdit.visibility = View.GONE
+            courseEdit.visibility = View.GONE
+            dreamEdit.visibility = View.GONE
+            crushEdit.visibility = View.GONE
+            messageEdit.visibility = View.GONE
+            doneButton.visibility = View.GONE
+
+            nameText.visibility = View.VISIBLE
+            nicknameText.visibility = View.VISIBLE
+            ageText.visibility = View.VISIBLE
+            birthdayText.visibility = View.VISIBLE
+            phoneText.visibility = View.VISIBLE
+            emailText.visibility = View.VISIBLE
+            courseText.visibility = View.VISIBLE
+            dreamText.visibility = View.VISIBLE
+            crushText.visibility = View.VISIBLE
+            messageText.visibility = View.VISIBLE
+            thankYou.visibility = View.VISIBLE
+        }
+
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 }

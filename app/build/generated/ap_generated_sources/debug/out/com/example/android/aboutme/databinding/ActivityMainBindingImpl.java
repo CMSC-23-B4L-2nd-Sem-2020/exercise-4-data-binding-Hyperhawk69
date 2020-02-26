@@ -15,27 +15,28 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.hello, 11);
-        sViewsWithIds.put(R.id.name_label, 12);
-        sViewsWithIds.put(R.id.name_edit, 13);
-        sViewsWithIds.put(R.id.nickname_label, 14);
-        sViewsWithIds.put(R.id.nickname_edit, 15);
-        sViewsWithIds.put(R.id.age_label, 16);
-        sViewsWithIds.put(R.id.age_edit, 17);
-        sViewsWithIds.put(R.id.birthday, 18);
-        sViewsWithIds.put(R.id.birthday_edit, 19);
-        sViewsWithIds.put(R.id.phone, 20);
-        sViewsWithIds.put(R.id.phone_edit, 21);
-        sViewsWithIds.put(R.id.email, 22);
-        sViewsWithIds.put(R.id.email_edit, 23);
-        sViewsWithIds.put(R.id.course, 24);
-        sViewsWithIds.put(R.id.course_edit, 25);
-        sViewsWithIds.put(R.id.dream, 26);
-        sViewsWithIds.put(R.id.dream_edit, 27);
-        sViewsWithIds.put(R.id.crush, 28);
-        sViewsWithIds.put(R.id.crush_edit, 29);
-        sViewsWithIds.put(R.id.message, 30);
-        sViewsWithIds.put(R.id.message_edit, 31);
-        sViewsWithIds.put(R.id.done_button, 32);
+        sViewsWithIds.put(R.id.thank_you, 12);
+        sViewsWithIds.put(R.id.name_label, 13);
+        sViewsWithIds.put(R.id.name_edit, 14);
+        sViewsWithIds.put(R.id.nickname_label, 15);
+        sViewsWithIds.put(R.id.nickname_edit, 16);
+        sViewsWithIds.put(R.id.age_label, 17);
+        sViewsWithIds.put(R.id.age_edit, 18);
+        sViewsWithIds.put(R.id.birthday_label, 19);
+        sViewsWithIds.put(R.id.birthday_edit, 20);
+        sViewsWithIds.put(R.id.phone_label, 21);
+        sViewsWithIds.put(R.id.phone_edit, 22);
+        sViewsWithIds.put(R.id.email_label, 23);
+        sViewsWithIds.put(R.id.email_edit, 24);
+        sViewsWithIds.put(R.id.course_label, 25);
+        sViewsWithIds.put(R.id.course_edit, 26);
+        sViewsWithIds.put(R.id.dream_label, 27);
+        sViewsWithIds.put(R.id.dream_edit, 28);
+        sViewsWithIds.put(R.id.crush_label, 29);
+        sViewsWithIds.put(R.id.crush_edit, 30);
+        sViewsWithIds.put(R.id.message_label, 31);
+        sViewsWithIds.put(R.id.message_edit, 32);
+        sViewsWithIds.put(R.id.done_button, 33);
     }
     // views
     // variables
@@ -45,16 +46,16 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     private androidx.databinding.InverseBindingListener ageTextandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
         @Override
         public void onChange() {
-            // Inverse of myInfo.nickname
-            //         is myInfo.setNickname((java.lang.String) callbackArg_0)
+            // Inverse of myInfo.age
+            //         is myInfo.setAge((java.lang.String) callbackArg_0)
             java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(ageText);
             // localize variables for thread safety
+            // myInfo.age
+            java.lang.String myInfoAge = null;
             // myInfo != null
             boolean myInfoJavaLangObjectNull = false;
             // myInfo
             com.example.android.aboutme.MyInfo myInfo = mMyInfo;
-            // myInfo.nickname
-            java.lang.String myInfoNickname = null;
 
 
 
@@ -64,7 +65,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
 
 
 
-                myInfo.setNickname(((java.lang.String) (callbackArg_0)));
+                myInfo.setAge(((java.lang.String) (callbackArg_0)));
             }
         }
     };
@@ -304,43 +305,44 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     };
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 33, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 34, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.EditText) bindings[17]
-            , (android.widget.TextView) bindings[16]
-            , (android.widget.TextView) bindings[2]
-            , (android.widget.ScrollView) bindings[0]
-            , (android.widget.TextView) bindings[18]
-            , (android.widget.EditText) bindings[19]
+            , (android.widget.EditText) bindings[18]
+            , (android.widget.TextView) bindings[17]
             , (android.widget.TextView) bindings[3]
-            , (android.widget.TextView) bindings[24]
-            , (android.widget.EditText) bindings[25]
-            , (android.widget.TextView) bindings[6]
-            , (android.widget.TextView) bindings[28]
-            , (android.widget.EditText) bindings[29]
-            , (android.widget.TextView) bindings[8]
-            , (android.widget.Button) bindings[32]
-            , (android.widget.TextView) bindings[26]
-            , (android.widget.EditText) bindings[27]
-            , (android.widget.TextView) bindings[7]
-            , (android.widget.TextView) bindings[22]
-            , (android.widget.EditText) bindings[23]
-            , (android.widget.TextView) bindings[5]
-            , (android.widget.TextView) bindings[11]
-            , (android.widget.TextView) bindings[30]
-            , (android.widget.EditText) bindings[31]
-            , (android.widget.TextView) bindings[9]
-            , (android.widget.EditText) bindings[13]
-            , (android.widget.TextView) bindings[12]
-            , (android.widget.TextView) bindings[1]
-            , (android.widget.EditText) bindings[15]
-            , (android.widget.TextView) bindings[14]
-            , (android.widget.TextView) bindings[10]
-            , (android.widget.TextView) bindings[20]
-            , (android.widget.EditText) bindings[21]
+            , (android.widget.ScrollView) bindings[0]
+            , (android.widget.EditText) bindings[20]
+            , (android.widget.TextView) bindings[19]
             , (android.widget.TextView) bindings[4]
+            , (android.widget.EditText) bindings[26]
+            , (android.widget.TextView) bindings[25]
+            , (android.widget.TextView) bindings[7]
+            , (android.widget.EditText) bindings[30]
+            , (android.widget.TextView) bindings[29]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.Button) bindings[33]
+            , (android.widget.EditText) bindings[28]
+            , (android.widget.TextView) bindings[27]
+            , (android.widget.TextView) bindings[8]
+            , (android.widget.EditText) bindings[24]
+            , (android.widget.TextView) bindings[23]
+            , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[11]
+            , (android.widget.EditText) bindings[32]
+            , (android.widget.TextView) bindings[31]
+            , (android.widget.TextView) bindings[10]
+            , (android.widget.EditText) bindings[14]
+            , (android.widget.TextView) bindings[13]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.EditText) bindings[16]
+            , (android.widget.TextView) bindings[15]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.EditText) bindings[22]
+            , (android.widget.TextView) bindings[21]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.TextView) bindings[12]
             );
         this.ageText.setTag(null);
         this.bioScroll.setTag(null);
@@ -415,6 +417,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         com.example.android.aboutme.MyInfo myInfo = mMyInfo;
         java.lang.String myInfoCrush = null;
         java.lang.String myInfoDream = null;
+        java.lang.String myInfoAge = null;
         java.lang.String myInfoMessage = null;
         java.lang.String myInfoName = null;
         java.lang.String myInfoEmail = null;
@@ -433,6 +436,8 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
                     myInfoCrush = myInfo.getCrush();
                     // read myInfo.dream
                     myInfoDream = myInfo.getDream();
+                    // read myInfo.age
+                    myInfoAge = myInfo.getAge();
                     // read myInfo.message
                     myInfoMessage = myInfo.getMessage();
                     // read myInfo.name
@@ -451,7 +456,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.ageText, myInfoNickname);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.ageText, myInfoAge);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.birthdayText, myInfoBirthday);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.courseText, myInfoCourse);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.crushText, myInfoCrush);

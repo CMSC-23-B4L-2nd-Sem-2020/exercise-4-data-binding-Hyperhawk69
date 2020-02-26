@@ -629,8 +629,8 @@ id always
 id async
 id beginning
 id bio_scroll
-id birthday
 id birthday_edit
+id birthday_label
 id birthday_text
 id blocking
 id bottom
@@ -645,11 +645,11 @@ id clip_vertical
 id collapseActionView
 id content
 id contentPanel
-id course
 id course_edit
+id course_label
 id course_text
-id crush
 id crush_edit
+id crush_label
 id crush_text
 id custom
 id customPanel
@@ -658,12 +658,12 @@ id decor_content_parent
 id default_activity_button
 id disableHome
 id done_button
-id dream
 id dream_edit
+id dream_label
 id dream_text
 id edit_query
-id email
 id email_edit
+id email_label
 id email_text
 id end
 id expand_activities_button
@@ -689,6 +689,7 @@ id listMode
 id list_item
 id message
 id message_edit
+id message_label
 id message_text
 id middle
 id multiply
@@ -707,8 +708,8 @@ id notification_main_column_container
 id onAttachStateChangeListener
 id onDateChanged
 id parentPanel
-id phone
 id phone_edit
+id phone_label
 id phone_text
 id progress_circular
 id progress_horizontal
@@ -752,6 +753,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textWatcher
+id thank_you
 id time
 id title
 id titleDividerNoCustom
@@ -873,6 +875,7 @@ string phone_enter
 string phone_label
 string search_menu_title
 string status_bar_notification_info_overflow
+string thanks
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

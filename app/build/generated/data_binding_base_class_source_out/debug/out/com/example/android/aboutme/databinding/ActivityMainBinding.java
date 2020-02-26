@@ -32,28 +32,28 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final ScrollView bioScroll;
 
   @NonNull
-  public final TextView birthday;
+  public final EditText birthdayEdit;
 
   @NonNull
-  public final EditText birthdayEdit;
+  public final TextView birthdayLabel;
 
   @NonNull
   public final TextView birthdayText;
 
   @NonNull
-  public final TextView course;
+  public final EditText courseEdit;
 
   @NonNull
-  public final EditText courseEdit;
+  public final TextView courseLabel;
 
   @NonNull
   public final TextView courseText;
 
   @NonNull
-  public final TextView crush;
+  public final EditText crushEdit;
 
   @NonNull
-  public final EditText crushEdit;
+  public final TextView crushLabel;
 
   @NonNull
   public final TextView crushText;
@@ -62,19 +62,19 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final Button doneButton;
 
   @NonNull
-  public final TextView dream;
+  public final EditText dreamEdit;
 
   @NonNull
-  public final EditText dreamEdit;
+  public final TextView dreamLabel;
 
   @NonNull
   public final TextView dreamText;
 
   @NonNull
-  public final TextView email;
+  public final EditText emailEdit;
 
   @NonNull
-  public final EditText emailEdit;
+  public final TextView emailLabel;
 
   @NonNull
   public final TextView emailText;
@@ -83,10 +83,10 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView hello;
 
   @NonNull
-  public final TextView message;
+  public final EditText messageEdit;
 
   @NonNull
-  public final EditText messageEdit;
+  public final TextView messageLabel;
 
   @NonNull
   public final TextView messageText;
@@ -110,50 +110,54 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView nicknameText;
 
   @NonNull
-  public final TextView phone;
-
-  @NonNull
   public final EditText phoneEdit;
 
   @NonNull
+  public final TextView phoneLabel;
+
+  @NonNull
   public final TextView phoneText;
+
+  @NonNull
+  public final TextView thankYou;
 
   @Bindable
   protected MyInfo mMyInfo;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       EditText ageEdit, TextView ageLabel, TextView ageText, ScrollView bioScroll,
-      TextView birthday, EditText birthdayEdit, TextView birthdayText, TextView course,
-      EditText courseEdit, TextView courseText, TextView crush, EditText crushEdit,
-      TextView crushText, Button doneButton, TextView dream, EditText dreamEdit, TextView dreamText,
-      TextView email, EditText emailEdit, TextView emailText, TextView hello, TextView message,
-      EditText messageEdit, TextView messageText, EditText nameEdit, TextView nameLabel,
-      TextView nameText, EditText nicknameEdit, TextView nicknameLabel, TextView nicknameText,
-      TextView phone, EditText phoneEdit, TextView phoneText) {
+      EditText birthdayEdit, TextView birthdayLabel, TextView birthdayText, EditText courseEdit,
+      TextView courseLabel, TextView courseText, EditText crushEdit, TextView crushLabel,
+      TextView crushText, Button doneButton, EditText dreamEdit, TextView dreamLabel,
+      TextView dreamText, EditText emailEdit, TextView emailLabel, TextView emailText,
+      TextView hello, EditText messageEdit, TextView messageLabel, TextView messageText,
+      EditText nameEdit, TextView nameLabel, TextView nameText, EditText nicknameEdit,
+      TextView nicknameLabel, TextView nicknameText, EditText phoneEdit, TextView phoneLabel,
+      TextView phoneText, TextView thankYou) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ageEdit = ageEdit;
     this.ageLabel = ageLabel;
     this.ageText = ageText;
     this.bioScroll = bioScroll;
-    this.birthday = birthday;
     this.birthdayEdit = birthdayEdit;
+    this.birthdayLabel = birthdayLabel;
     this.birthdayText = birthdayText;
-    this.course = course;
     this.courseEdit = courseEdit;
+    this.courseLabel = courseLabel;
     this.courseText = courseText;
-    this.crush = crush;
     this.crushEdit = crushEdit;
+    this.crushLabel = crushLabel;
     this.crushText = crushText;
     this.doneButton = doneButton;
-    this.dream = dream;
     this.dreamEdit = dreamEdit;
+    this.dreamLabel = dreamLabel;
     this.dreamText = dreamText;
-    this.email = email;
     this.emailEdit = emailEdit;
+    this.emailLabel = emailLabel;
     this.emailText = emailText;
     this.hello = hello;
-    this.message = message;
     this.messageEdit = messageEdit;
+    this.messageLabel = messageLabel;
     this.messageText = messageText;
     this.nameEdit = nameEdit;
     this.nameLabel = nameLabel;
@@ -161,9 +165,10 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.nicknameEdit = nicknameEdit;
     this.nicknameLabel = nicknameLabel;
     this.nicknameText = nicknameText;
-    this.phone = phone;
     this.phoneEdit = phoneEdit;
+    this.phoneLabel = phoneLabel;
     this.phoneText = phoneText;
+    this.thankYou = thankYou;
   }
 
   public abstract void setMyInfo(@Nullable MyInfo myInfo);
