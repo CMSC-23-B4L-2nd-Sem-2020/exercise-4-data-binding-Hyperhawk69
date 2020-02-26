@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
+//Cabuslay, Ryan Vincent L.
+//2018-12076
+
 package com.example.android.aboutme
 
 import android.content.Context
@@ -24,27 +27,27 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.android.aboutme.databinding.ActivityMainBinding
 
-
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding //variable to bind elements from Activity Main
 
-    private val myInfo: MyInfo = MyInfo()
+    private val myInfo: MyInfo = MyInfo() //data class of elements to be input by user
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main) //binds elements from Activity Main
 
-        binding.myInfo = myInfo
+        binding.myInfo = myInfo //binds myInfo
 
         binding.doneButton.setOnClickListener {
-            addInfo(it)
+            addInfo(it) //when clicked, processes the inputs
         }
 
     }
 
     private fun addInfo(view: View) {
         binding. apply {
+            //sets the fields of myInfo from the user input
             myInfo?.name = nameEdit.text.toString()
             myInfo?.nickname = nicknameEdit.text.toString()
             myInfo?.age = ageEdit.text.toString()
@@ -56,8 +59,9 @@ class MainActivity : AppCompatActivity() {
             myInfo?.crush = crushEdit.text.toString()
             myInfo?.message = messageEdit.text.toString()
 
-            invalidateAll()
+            invalidateAll() //refreshes UI with updated values
 
+            //sets the GONE visibility to elements before input
             hello.visibility = View.GONE
             nameLabel.visibility = View.GONE
             nicknameLabel.visibility = View.GONE
@@ -81,6 +85,7 @@ class MainActivity : AppCompatActivity() {
             messageEdit.visibility = View.GONE
             doneButton.visibility = View.GONE
 
+            //sets the VISIBLE visibility to elements after output
             nameText.visibility = View.VISIBLE
             nicknameText.visibility = View.VISIBLE
             ageText.visibility = View.VISIBLE
